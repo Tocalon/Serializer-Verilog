@@ -15,7 +15,7 @@ module serializa(CLK, load, data_in, data_out, send, rst, send);
             temp_data_out<=12'b0; 
         end 
         else if (load) begin 
-            for (i=0; i<12; i=i+1) begin 
+            for (i=0; i<10; i=i+1) begin 
                 temp_data_out[i]<=data_in[i];
             end       
         end else if (send )begin 
