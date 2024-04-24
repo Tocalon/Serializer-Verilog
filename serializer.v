@@ -5,7 +5,7 @@ module serializa(CLK, load, data_in, data_out, send, rst, send);
 
     output reg data_out; 
 
-   output reg [11:0] temp_data_out; 
+    output reg [11:0] temp_data_out; 
     integer i, j; 
 
     always @ (posedge CLK)

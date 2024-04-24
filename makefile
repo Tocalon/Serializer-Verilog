@@ -15,7 +15,7 @@ IVERILOG_CMD = iverilog -o $(TARGET)
 SIMULATION_CMD = vvp $(TARGET)
 
 # Comando para visualizar resultados con GTKWave
-WAVE_VIEWER = gtkwave comunicacionSerializar.vcd
+WAVE_VIEWER = gtkwave 
 
 # Regla predeterminada (primera regla a ejecutar)
 all: $(TARGET)
@@ -34,7 +34,7 @@ simulate: $(TARGET)
 
 # Regla para visualizar resultados con GTKWave
 view: comunicacionSerializar.vcd
-	$(WAVE_VIEWER) comunicacionSerializar.vcd
+	$(WAVE_VIEWER) $(TARGET).vcd
 
 # Regla para limpiar archivos generados
 clean:
